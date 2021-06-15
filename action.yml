@@ -1,0 +1,15 @@
+name: 'Setup Terraform'
+description: 'Install a specific version of terraform CLI binary. Acceptable values are latest or any semantic version string like 1.0.0'
+inputs:
+  version:
+    description: 'Version of terraform CLI'
+    required: true
+    default: 'latest'
+outputs:
+  terraform-path:
+    description: 'Path to the cached terraform CLI binary'
+branding:
+  color: 'purple'
+runs:
+  using: 'node12'
+  main: 'lib/run.js'
