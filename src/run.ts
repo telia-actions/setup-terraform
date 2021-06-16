@@ -46,7 +46,7 @@ export async function download(version: string): Promise<string> {
 }
 
 export async function run() {
-  let version = core.getInput('version', { 'required': true });
+  let version = core.getInput('terraform_version', { 'required': true });
   if (version.toLocaleLowerCase() === 'latest') {
     version = await getStableVersion();
   }

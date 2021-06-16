@@ -17,5 +17,5 @@ A specific version of Terraform CLI can be installed by adding semantic version 
 steps:
 - uses: telia-actions/setup-terraform@v1
   with:
-    version: '0.15.5'
+    terraform_version: '0.15.5'
 ```
