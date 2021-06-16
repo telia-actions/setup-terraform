@@ -4,7 +4,9 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "build": "tsc"
+        "build": "tsc",
+        "pack": "ncc build",
+        "all": "npm run build && npm run pack"
     },
     "dependencies": {
         "@actions/core": "^1.2.6",
@@ -13,6 +15,7 @@
     },
     "devDependencies": {
         "@types/node": "^12.0.10",
+        "@zeit/ncc": "^0.22.3",
         "typescript": "^3.9.9"
     },
     "main": "lib/run.js"
